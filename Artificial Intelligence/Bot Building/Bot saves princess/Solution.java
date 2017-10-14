@@ -1,10 +1,10 @@
 /**
- * @author 	Zoltan Viski (vizoli)
- * 			vizoli.hu
- * 			github.com/zoltanviski
- * 			hackerrank.com/zoltanviski
+ * @author  Zoltan Viski (vizoli)
+ *          vizoli.hu
+ *          github.com/zoltanviski
+ *          hackerrank.com/zoltanviski
  * 
- * Problem: https://www.hackerrank.com/challenges/saveprincess
+ * Problem: https://www.hackerrank.com/challenges/saveprincess2
  */
 
 import java.io.*;
@@ -32,24 +32,21 @@ public class Solution {
         int robotRow = m / 2;
         int robotColumn = robotRow;
         
-        for (int i = 0; i < robotRow; i++) {
+        int n = robotRow;
+        for (int i = 0; i < n; i++) {
             if (robotRow > princessRow) {
                 robotRow--;
-				
                 System.out.println("UP");
             } else {
                 robotRow++;
-				
                 System.out.println("DOWN");
             }
             
             if (robotColumn > princessColumn) {
                 robotColumn--;
-				
                 System.out.println("LEFT");
             } else {
                 robotColumn++;
-				
                 System.out.println("RIGHT");
             }
         }

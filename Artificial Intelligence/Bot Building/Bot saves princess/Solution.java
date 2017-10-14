@@ -4,7 +4,7 @@
  *          github.com/zoltanviski
  *          hackerrank.com/zoltanviski
  * 
- * Problem: https://www.hackerrank.com/challenges/saveprincess2
+ * Problem: https://www.hackerrank.com/challenges/saveprincess
  */
 
 import java.io.*;

@@ -1,6 +1,11 @@
-//     Author: Zoltan Viski (vizoli)
-//     Github: github.com/zoltanviski
-// HackerRank: hackerrank.com/zoltanviski
+/**
+ * @author 	Zoltan Viski (vizoli)
+ * 			vizoli.hu
+ * 			github.com/zoltanviski
+ * 			hackerrank.com/zoltanviski
+ * 
+ * Problem: https://www.hackerrank.com/challenges/saveprincess2
+ */
 
 import java.io.*;
 import java.util.*;

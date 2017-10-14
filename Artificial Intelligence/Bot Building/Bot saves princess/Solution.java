@@ -17,7 +17,7 @@ import java.awt.Point;
 public class Solution {
     static char princess = 'p';
     
-    static Point getPrincessPosition(int m, char [][] grid) {
+    private static Point getPrincessPosition(int m, char [][] grid) {
         if (grid[0][0] == princess) return new Point(0, 0);
         if (grid[0][m-1] == princess) return new Point(0, m-1);
         if (grid[m-1][0] == princess) return new Point(m-1, 0);
@@ -25,28 +25,31 @@ public class Solution {
         return new Point(m-1, m-1);
     } 
     
-    static void displayPathtoPrincess(int m, char [][] grid){
+    private static void displayPathtoPrincess(int m, char [][] grid){
         Point pricessPos = getPrincessPosition(m, grid);
         int princessRow = (int)pricessPos.getX();
         int princessColumn = (int)pricessPos.getY();
         int robotRow = m / 2;
         int robotColumn = robotRow;
         
-        int n = robotRow;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < robotRow; i++) {
             if (robotRow > princessRow) {
                 robotRow--;
+                
                 System.out.println("UP");
             } else {
                 robotRow++;
+                
                 System.out.println("DOWN");
             }
             
             if (robotColumn > princessColumn) {
                 robotColumn--;
+                
                 System.out.println("LEFT");
             } else {
                 robotColumn++;
+                
                 System.out.println("RIGHT");
             }
         }
@@ -54,8 +57,7 @@ public class Solution {
     
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int m;
-        m = in.nextInt();
+        int m = in.nextInt();
         char grid[][] = new char[m][m];
         for(int row = 0; row < m; row++) {
             String line = in.next();

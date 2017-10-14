@@ -19,7 +19,7 @@ public class Solution {
     static int princessRow = 0;
     static int princessColumn = 0;
     
-    static void getPrincessPosition(int n, String[] grid) {
+    private static void getPrincessPosition(int n, String[] grid) {
         boolean found = false;
         
         for (int row = 0; row < n; row++) {
@@ -37,7 +37,7 @@ public class Solution {
         }
     }
     
-    static void nextMove(int n, int r, int c, String [] grid){
+    private static void nextMove(int n, int r, int c, String [] grid){
         if (r < princessRow) {
             System.out.println("DOWN");
             

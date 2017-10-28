@@ -4,3 +4,9 @@
     </a>
     <br>Efficient and optimal solutions to HackerRank problems
 </p>
+
+# Algorithms
+
+|        Subdomain        |                                                              Challenge                                                              | Points |                                                                                  Solution                                                                                 |
+|:-----------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|         Dynamic Programming Challenges         | [Fibonacci Modified](https://www.hackerrank.com/challenges/fibonacci-modified)                                                         |   10   | [Solution.java](https://github.com/zoltanviski/HackerRank/blob/master/Algorithms/Dynamic%20Programming%20Challenges/Fibonacci%20Modified/Solution.java)                          |
